@@ -1,0 +1,11 @@
+/bin
+.classpath
+/src-providedGroovy
+/template
+/h2_database
+/process_configurations
+/META-INF
+/.settings
+/target/
+/web_widgets/pb*/
+/lib/bdm-client-pojo.jar

@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Organization_Data (5)">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="03797J">
+      <firstName>Florence</firstName>
+      <lastName>Moutier</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>florence.moutier@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="04598K">
+      <firstName>François</firstName>
+      <lastName>Boucrot</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>francois.boucrot@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="09635A">
+      <firstName>Françoise</firstName>
+      <lastName>Peronnet</lastName>
+      <manager></manager>
+      <personalData>
+        <email>francoise.peronnet@maif.fr</email>
+      </personalData>
+      <professionalData>
+        <email>francoise.peronnet@maif.fr</email>
+      </professionalData>
+      <enabled>false</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="11609D">
+      <firstName>Solange</firstName>
+      <lastName>Charrier</lastName>
+      <manager>06339P</manager>
+      <personalData/>
+      <professionalData>
+        <email>solange.charrier@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="00686M">
+      <firstName>Isabelle</firstName>
+      <lastName>Ardouin</lastName>
+      <manager>04235P</manager>
+      <personalData/>
+      <professionalData>
+        <email>isabelle.ardouin@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="05371M">
+      <firstName>Cécile</firstName>
+      <lastName>Jarry</lastName>
+      <manager>04235P</manager>
+      <personalData/>
+      <professionalData>
+        <email>cecile.jarry@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="07702T">
+      <firstName>Nicolas</firstName>
+      <lastName>Biard</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>nicolas.biard@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="06339P">
+      <firstName>Fabrice</firstName>
+      <lastName>Oger</lastName>
+      <manager></manager>
+      <personalData>
+        <email>fabrice.oger@maif.fr</email>
+      </personalData>
+      <professionalData>
+        <email>fabrice.oger@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="04235P">
+      <firstName>Jean-René</firstName>
+      <lastName>Boulineau</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>jean-rene.boulineau@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="71179R">
+      <firstName>Jean-Claude</firstName>
+      <lastName>Tranchant</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>jean-claude.tranchant@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="03591D">
+      <firstName>Laurence</firstName>
+      <lastName>Rullier</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>laurence.rullier@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="03582H">
+      <firstName>Nathalie</firstName>
+      <lastName>Thomas</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>nathalie.thomas@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="09348H">
+      <firstName>Jérémy</firstName>
+      <lastName>Jorio</lastName>
+      <manager>06339P</manager>
+      <personalData/>
+      <professionalData>
+        <email>jeremy.jorio@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="04179H">
+      <firstName>Isabelle</firstName>
+      <lastName>Guignet</lastName>
+      <manager>03582H</manager>
+      <personalData/>
+      <professionalData>
+        <email>isabelle.guignet@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="02359A">
+      <firstName>Brigitte</firstName>
+      <lastName>Larrat</lastName>
+      <manager>08123T</manager>
+      <personalData/>
+      <professionalData>
+        <email>brigitte.larrat@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="06620M">
+      <firstName>Bruno</firstName>
+      <lastName>Chanoine</lastName>
+      <manager>08123T</manager>
+      <personalData/>
+      <professionalData>
+        <email>bruno.chanoine@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="10745T">
+      <firstName>Amélie</firstName>
+      <lastName>Pajoux</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>amelie.pajoux@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">o0J8LAonJlKKolunONZ4zw==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="08397M">
+      <firstName>Anita</firstName>
+      <lastName>Giroire</lastName>
+      <manager>07702T</manager>
+      <personalData/>
+      <professionalData>
+        <email>anita.giroire@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="03794T">
+      <firstName>Armelle</firstName>
+      <lastName>Payet</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>armelle.payet@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="70930B">
+      <firstName>Céline</firstName>
+      <lastName>Denis</lastName>
+      <manager>07702T</manager>
+      <personalData/>
+      <professionalData>
+        <email>celine.denis@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="11918A">
+      <firstName>Delphine</firstName>
+      <lastName>Lecomte</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>delphine.lecomte@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="08123T">
+      <firstName>Frédéric</firstName>
+      <lastName>Genest</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>frederic.genest@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="71462H">
+      <firstName>Hélène</firstName>
+      <lastName>Compain</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>helene.compain@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="08519N">
+      <firstName>Loubna</firstName>
+      <lastName>Niny</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>loubna.niny@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="03833J">
+      <firstName>Marie-Anne</firstName>
+      <lastName>Le Gleuher</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>marie-anne.le.gleuher@maif.fr</email>
+      </professionalData>
+      <enabled>false</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="10729P">
+      <firstName>Olivier</firstName>
+      <lastName>Dabin</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>olivier.dabin@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="11105P">
+      <firstName>Patricia</firstName>
+      <lastName>Claisse</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>patricia.claisse@maif.fr</email>
+      </professionalData>
+      <enabled>false</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="09738B">
+      <firstName>Yann</firstName>
+      <lastName>Lagré</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>yann.lagre@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="10471T">
+      <firstName>Yoan</firstName>
+      <lastName>Bouyer</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>yoan.bouyer@maif.fr</email>
+      </professionalData>
+      <enabled>false</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="70939K">
+      <firstName>Patrice</firstName>
+      <lastName>Radin</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>patrice.radin@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="08624T">
+      <firstName>Angélique</firstName>
+      <lastName>Vivien</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>angelique.vivien@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="01324D">
+      <firstName>Agnès</firstName>
+      <lastName>Genex</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>agnes.genex@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="06393D">
+      <firstName>Sophie</firstName>
+      <lastName>Grelier</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>sophie.grelier@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="09125B">
+      <firstName>Emmanuelle</firstName>
+      <lastName>Bernardeau</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>emmanuelle.bernardeau@maif.fr</email>
+      </professionalData>
+      <enabled>false</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="03439P">
+      <firstName>Olivier</firstName>
+      <lastName>Mathieu</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>olivier.mathieu@maif.fr</email>
+      </professionalData>
+      <enabled>false</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="07098T">
+      <firstName>Sabrina</firstName>
+      <lastName>Thromas</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>sabrina.thromas@maif.fr</email>
+      </professionalData>
+      <enabled>false</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="97815R">
+      <firstName>Freddy</firstName>
+      <lastName>RICHARD</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>freddy.richard@externe.maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="04467R">
+      <firstName>Sophie</firstName>
+      <lastName>Airault</lastName>
+      <manager>07702T</manager>
+      <personalData/>
+      <professionalData>
+        <email>sophie.airault@maif.fr</email>
+      </professionalData>
+      <enabled>false</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="08496J">
+      <firstName>Sabrina</firstName>
+      <lastName>Papin</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>sabrina.papin@maif.fr</email>
+      </professionalData>
+      <enabled>false</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="03149M">
+      <firstName>Caroline</firstName>
+      <lastName>GARNAULT</lastName>
+      <manager>04235P</manager>
+      <personalData/>
+      <professionalData>
+        <email>caroline.garnault@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="11161R">
+      <firstName>Fabrice</firstName>
+      <lastName>JUBIEN</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="09610K">
+      <firstName>Sylvain</firstName>
+      <lastName>Gaborit</lastName>
+      <manager>03794T</manager>
+      <personalData/>
+      <professionalData>
+        <email>sylvain.gaborit@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="71657T">
+      <firstName>Céline</firstName>
+      <lastName>BOUILLY</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>celine.bouilly@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="70050R">
+      <firstName>Pleys Guillaume</firstName>
+      <lastName>HYPOTE</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>pleys.guillaume.hypote@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">M1Eaxt5Ss6SxN7vJB8rV2w==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="74018N">
+      <firstName>Margaux</firstName>
+      <lastName>PRIGENT</lastName>
+      <manager>07702T</manager>
+      <personalData/>
+      <professionalData>
+        <email>margaux.prigent@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">Gh3JHJBzJcaScd3wyUS8cg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="73477D">
+      <firstName>Florence</firstName>
+      <lastName>MOUSSET</lastName>
+      <manager>03794T</manager>
+      <personalData/>
+      <professionalData>
+        <email>florence.mousset@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">Gh3JHJBzJcaScd3wyUS8cg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="03827T">
+      <firstName>Nelly</firstName>
+      <lastName>Bodin</lastName>
+      <manager>08123T</manager>
+      <personalData/>
+      <professionalData>
+        <email>nelly.bodin@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">Gh3JHJBzJcaScd3wyUS8cg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="10657N">
+      <firstName>Aurélie</firstName>
+      <lastName>Chevallereau</lastName>
+      <manager>08123T</manager>
+      <personalData/>
+      <professionalData>
+        <email>aurelie.chevallereau@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">Gh3JHJBzJcaScd3wyUS8cg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="11680N">
+      <firstName>Rebecca</firstName>
+      <lastName>Denize</lastName>
+      <manager>08123T</manager>
+      <personalData/>
+      <professionalData>
+        <email>rebecca.denize@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">Gh3JHJBzJcaScd3wyUS8cg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="02991D">
+      <firstName>Fabienne</firstName>
+      <lastName>Sling</lastName>
+      <manager>08123T</manager>
+      <personalData/>
+      <professionalData>
+        <email>fabienne.sling@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">Gh3JHJBzJcaScd3wyUS8cg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="03861T">
+      <firstName>Cathy</firstName>
+      <lastName>Roy</lastName>
+      <manager>03591D</manager>
+      <personalData/>
+      <professionalData>
+        <email>cathy.roy@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">Gh3JHJBzJcaScd3wyUS8cg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="03215P">
+      <firstName>Mireille</firstName>
+      <lastName>Neau</lastName>
+      <manager>03591D</manager>
+      <personalData/>
+      <professionalData>
+        <email>mireille.neau@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">Gh3JHJBzJcaScd3wyUS8cg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="03788K">
+      <firstName>Nathalie</firstName>
+      <lastName>Feroux</lastName>
+      <manager>03591D</manager>
+      <personalData/>
+      <professionalData>
+        <email>nathalie.feroux@maif.fr</email>
+      </professionalData>
+      <enabled>true</enabled>
+      <password encrypted="false">Gh3JHJBzJcaScd3wyUS8cg==</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="04210D">
+      <firstName>Anne</firstName>
+      <lastName>Catuhe</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">Maif1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="09800A">
+      <firstName>Cécile</firstName>
+      <lastName>Lavergne</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">Maif1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="07521H">
+      <firstName>Sophie</firstName>
+      <lastName>BENOIST</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">Maif1234</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="72836K">
+      <firstName>Stéphanie</firstName>
+      <lastName>Faucher</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">Maif1234</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Utilisateur">
+      <displayName>Utilisateur</displayName>
+    </role>
+    <role name="Utilisateur Valideur">
+      <displayName>Utilisateur Valideur</displayName>
+    </role>
+    <role name="Manager">
+      <displayName>Manager</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="MAIF">
+      <displayName>MAIF</displayName>
+      <description>Entité générale MAIF</description>
+    </group>
+    <group name="DGE" parentPath="/MAIF">
+      <displayName>DGE</displayName>
+      <description>Direction de la gestion économique</description>
+    </group>
+    <group name="DGE-ENC" parentPath="/MAIF/DGE">
+      <displayName>DGE-ENC</displayName>
+      <description>DGE Encadrement</description>
+    </group>
+    <group name="PTGE" parentPath="/MAIF/DGE">
+      <displayName>PTGE</displayName>
+      <description>Pilotage Transverse de la gestion économique</description>
+    </group>
+    <group name="PAGE" parentPath="/MAIF/DGE/PTGE">
+      <displayName>PAGE</displayName>
+      <description>Pilotage de l'Activité de la gestion économique</description>
+    </group>
+    <group name="PEGE" parentPath="/MAIF/DGE/PTGE">
+      <displayName>PEGE</displayName>
+      <description>Pilotage Economique de la gestion économique</description>
+    </group>
+    <group name="AAR" parentPath="/MAIF/DGE">
+      <displayName>AAR</displayName>
+      <description>Actuariat Assurance et Réassurance</description>
+    </group>
+    <group name="SAP" parentPath="/MAIF/DGE/AAR">
+      <displayName>SAP</displayName>
+      <description>Actuariat et Provisionnement</description>
+    </group>
+    <group name="CAR" parentPath="/MAIF/DGE/AAR">
+      <displayName>CAR</displayName>
+      <description>Comptabilité Assurance Réassurance</description>
+    </group>
+    <group name="CGA" parentPath="/MAIF/DGE/AAR">
+      <displayName>CGA</displayName>
+      <description>Contrôle de Gestion Assurance</description>
+    </group>
+    <group name="GAPACF" parentPath="/MAIF/DGE">
+      <displayName>GAPACF</displayName>
+      <description>Gestion Actif Passif Analyse et Compta Financière</description>
+    </group>
+    <group name="CONSO" parentPath="/MAIF/DGE/GAPACF">
+      <displayName>CONSO</displayName>
+      <description>Comptes consolidés</description>
+    </group>
+    <group name="CP" parentPath="/MAIF/DGE/GAPACF">
+      <displayName>CP</displayName>
+      <description>Comptabilité des placements</description>
+    </group>
+    <group name="GAPEF" parentPath="/MAIF/DGE/GAPACF">
+      <displayName>GAPEF</displayName>
+      <description>Actif Passif</description>
+    </group>
+    <group name="CCGFG" parentPath="/MAIF/DGE">
+      <displayName>CCGFG</displayName>
+      <description>Comptabilité et Contrôle de Gestion FG</description>
+    </group>
+    <group name="CII" parentPath="/MAIF/DGE/CCGFG">
+      <displayName>CII</displayName>
+      <description>Comptabilité Informatique et Immobilier</description>
+    </group>
+    <group name="CPFDP" parentPath="/MAIF/DGE/CCGFG">
+      <displayName>CPFDP</displayName>
+      <description>Comptabilité Paye, Frais Déplt, Prestations</description>
+    </group>
+    <group name="CEA" parentPath="/MAIF/DGE/CCGFG">
+      <displayName>CEA</displayName>
+      <description>Comptabilité et Etudes Analytiques</description>
+    </group>
+    <group name="DI" parentPath="/MAIF">
+      <displayName>DI</displayName>
+      <description>Direction Informatique</description>
+    </group>
+    <group name="CSM-FE" parentPath="/MAIF/DI">
+      <displayName>CSM-FE</displayName>
+      <description>Construction de solutions métier - Fonctionnement entreprise</description>
+    </group>
+    <group name="DIP" parentPath="/MAIF">
+      <displayName>DIP</displayName>
+      <description>Direction Investissements et Placements</description>
+    </group>
+    <group name="Fiscalité" parentPath="/MAIF">
+      <displayName>Fiscalité</displayName>
+      <description>Service Fiscalité</description>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>00686M</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CONSO</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>01324D</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CAR</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>02359A</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CP</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>02991D</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CP</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1497428832316</assignedDate>
+    </membership>
+    <membership>
+      <userName>03149M</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CONSO</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1463663571686</assignedDate>
+    </membership>
+    <membership>
+      <userName>03215P</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CEA</groupName>
+      <groupParentPath>/MAIF/DGE/CCGFG</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1497510185976</assignedDate>
+    </membership>
+    <membership>
+      <userName>03439P</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CAR</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>03582H</userName>
+      <roleName>Manager</roleName>
+      <groupName>CAR</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>03591D</userName>
+      <roleName>Manager</roleName>
+      <groupName>CEA</groupName>
+      <groupParentPath>/MAIF/DGE/CCGFG</groupParentPath>
+    </membership>
+    <membership>
+      <userName>03788K</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CEA</groupName>
+      <groupParentPath>/MAIF/DGE/CCGFG</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1497510253043</assignedDate>
+    </membership>
+    <membership>
+      <userName>03794T</userName>
+      <roleName>Manager</roleName>
+      <groupName>CII</groupName>
+      <groupParentPath>/MAIF/DGE/CCGFG</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1489494553133</assignedDate>
+    </membership>
+    <membership>
+      <userName>03797J</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>PAGE</groupName>
+      <groupParentPath>/MAIF/DGE/PTGE</groupParentPath>
+    </membership>
+    <membership>
+      <userName>03827T</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CP</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1497428526852</assignedDate>
+    </membership>
+    <membership>
+      <userName>03833J</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CPFDP</groupName>
+      <groupParentPath>/MAIF/DGE/CCGFG</groupParentPath>
+    </membership>
+    <membership>
+      <userName>03861T</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CEA</groupName>
+      <groupParentPath>/MAIF/DGE/CCGFG</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1497510108851</assignedDate>
+    </membership>
+    <membership>
+      <userName>04179H</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CAR</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>04235P</userName>
+      <roleName>Manager</roleName>
+      <groupName>CONSO</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>04467R</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>PEGE</groupName>
+      <groupParentPath>/MAIF/DGE/PTGE</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1457368614967</assignedDate>
+    </membership>
+    <membership>
+      <userName>04598K</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>DGE-ENC</groupName>
+      <groupParentPath>/MAIF/DGE</groupParentPath>
+    </membership>
+    <membership>
+      <userName>05371M</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CONSO</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>06339P</userName>
+      <roleName>Manager</roleName>
+      <groupName>SAP</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>06393D</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CAR</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>06620M</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CP</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>07098T</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CAR</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>07702T</userName>
+      <roleName>Manager</roleName>
+      <groupName>PEGE</groupName>
+      <groupParentPath>/MAIF/DGE/PTGE</groupParentPath>
+    </membership>
+    <membership>
+      <userName>08123T</userName>
+      <roleName>Manager</roleName>
+      <groupName>CP</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1489495625187</assignedDate>
+    </membership>
+    <membership>
+      <userName>08397M</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>PEGE</groupName>
+      <groupParentPath>/MAIF/DGE/PTGE</groupParentPath>
+    </membership>
+    <membership>
+      <userName>08496J</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CII</groupName>
+      <groupParentPath>/MAIF/DGE/CCGFG</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1489574204505</assignedDate>
+    </membership>
+    <membership>
+      <userName>08519N</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>SAP</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>08624T</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CII</groupName>
+      <groupParentPath>/MAIF/DGE/CCGFG</groupParentPath>
+    </membership>
+    <membership>
+      <userName>09125B</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CAR</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>09348H</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>SAP</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>09610K</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CII</groupName>
+      <groupParentPath>/MAIF/DGE/CCGFG</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1489494725370</assignedDate>
+    </membership>
+    <membership>
+      <userName>09635A</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>DGE-ENC</groupName>
+      <groupParentPath>/MAIF/DGE</groupParentPath>
+    </membership>
+    <membership>
+      <userName>09738B</userName>
+      <roleName>Manager</roleName>
+      <groupName>GAPEF</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1489495586633</assignedDate>
+    </membership>
+    <membership>
+      <userName>10471T</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>GAPEF</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>10657N</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CP</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1497428580503</assignedDate>
+    </membership>
+    <membership>
+      <userName>10729P</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>GAPEF</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>10745T</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CAR</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>11105P</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>PAGE</groupName>
+      <groupParentPath>/MAIF/DGE/PTGE</groupParentPath>
+    </membership>
+    <membership>
+      <userName>11609D</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>SAP</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>11680N</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CP</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1497428749856</assignedDate>
+    </membership>
+    <membership>
+      <userName>11918A</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>GAPEF</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>70050R</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>SAP</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1490971727216</assignedDate>
+    </membership>
+    <membership>
+      <userName>70930B</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>PEGE</groupName>
+      <groupParentPath>/MAIF/DGE/PTGE</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1489493899911</assignedDate>
+    </membership>
+    <membership>
+      <userName>70939K</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>SAP</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>71179R</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CSM-FE</groupName>
+      <groupParentPath>/MAIF/DI</groupParentPath>
+    </membership>
+    <membership>
+      <userName>71462H</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>GAPEF</groupName>
+      <groupParentPath>/MAIF/DGE/GAPACF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>71657T</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>SAP</groupName>
+      <groupParentPath>/MAIF/DGE/AAR</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1490971370935</assignedDate>
+    </membership>
+    <membership>
+      <userName>73477D</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>CII</groupName>
+      <groupParentPath>/MAIF/DGE/CCGFG</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1495455779684</assignedDate>
+    </membership>
+    <membership>
+      <userName>74018N</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>PEGE</groupName>
+      <groupParentPath>/MAIF/DGE/PTGE</groupParentPath>
+      <assignedBy>03797J</assignedBy>
+      <assignedDate>1495454440174</assignedDate>
+    </membership>
+    <membership>
+      <userName>97815R</userName>
+      <roleName>Manager</roleName>
+      <groupName>CSM-FE</groupName>
+      <groupParentPath>/MAIF/DI</groupParentPath>
+    </membership>
+    <membership>
+      <userName>11161R</userName>
+      <roleName>Manager</roleName>
+      <groupName>CSM-FE</groupName>
+      <groupParentPath>/MAIF/DI</groupParentPath>
+    </membership>
+    <membership>
+      <userName>04210D</userName>
+      <roleName>Manager</roleName>
+      <groupName>Fiscalité</groupName>
+      <groupParentPath>/MAIF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>09800A</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>Fiscalité</groupName>
+      <groupParentPath>/MAIF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>07521H</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>DIP</groupName>
+      <groupParentPath>/MAIF</groupParentPath>
+    </membership>
+    <membership>
+      <userName>72836K</userName>
+      <roleName>Utilisateur</roleName>
+      <groupName>DIP</groupName>
+      <groupParentPath>/MAIF</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
