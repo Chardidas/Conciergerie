@@ -80,26 +80,26 @@
 <!-- 			<artifactId>xdocreport</artifactId> -->
 <!-- 			<version>1.0.5</version> -->
 <!-- 		</dependency> -->
-		<dependency>
-			<groupId>fr.opensagres.xdocreport</groupId>
-			<artifactId>fr.opensagres.xdocreport.document.docx</artifactId>
-			<version>1.0.5</version>
-		</dependency>
-		<dependency>
-			<groupId>fr.opensagres.xdocreport</groupId>
-			<artifactId>fr.opensagres.xdocreport.converter.docx.xwpf</artifactId>
-			<version>1.0.5</version>
-		</dependency>
-		<dependency>
-			<groupId>fr.opensagres.xdocreport</groupId>
-			<artifactId>fr.opensagres.xdocreport.template.velocity</artifactId>
-			<version>1.0.5</version>
-		</dependency>
-		<dependency>
-			<groupId>fr.opensagres.xdocreport</groupId>
-			<artifactId>fr.opensagres.xdocreport.template</artifactId>
-			<version>1.0.5</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>fr.opensagres.xdocreport</groupId> -->
+<!-- 			<artifactId>fr.opensagres.xdocreport.document.docx</artifactId> -->
+<!-- 			<version>1.0.5</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>fr.opensagres.xdocreport</groupId> -->
+<!-- 			<artifactId>fr.opensagres.xdocreport.converter.docx.xwpf</artifactId> -->
+<!-- 			<version>1.0.5</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>fr.opensagres.xdocreport</groupId> -->
+<!-- 			<artifactId>fr.opensagres.xdocreport.template.velocity</artifactId> -->
+<!-- 			<version>1.0.5</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>fr.opensagres.xdocreport</groupId> -->
+<!-- 			<artifactId>fr.opensagres.xdocreport.template</artifactId> -->
+<!-- 			<version>1.0.5</version> -->
+<!-- 		</dependency> -->
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
@@ -107,22 +107,22 @@
 		</dependency>
 	</dependencies>
 	
-	<dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>xml-apis</groupId>
-                <artifactId>xml-apis</artifactId>
-                <version>1.0.b2</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>commons-collections</groupId>
-                <artifactId>commons-collections</artifactId>
-                <version>3.2.1</version>
-                <scope>provided</scope>
-            </dependency>
-        </dependencies>
-</dependencyManagement>
+<!-- 	<dependencyManagement> -->
+<!--         <dependencies> -->
+<!--             <dependency> -->
+<!--                 <groupId>xml-apis</groupId> -->
+<!--                 <artifactId>xml-apis</artifactId> -->
+<!--                 <version>1.0.b2</version> -->
+<!--                 <scope>provided</scope> -->
+<!--             </dependency> -->
+<!--             <dependency> -->
+<!--                 <groupId>commons-collections</groupId> -->
+<!--                 <artifactId>commons-collections</artifactId> -->
+<!--                 <version>3.2.1</version> -->
+<!--                 <scope>provided</scope> -->
+<!--             </dependency> -->
+<!--         </dependencies> -->
+<!-- </dependencyManagement> -->
 
 	<build>
 		<finalName>${project.artifactId}</finalName>

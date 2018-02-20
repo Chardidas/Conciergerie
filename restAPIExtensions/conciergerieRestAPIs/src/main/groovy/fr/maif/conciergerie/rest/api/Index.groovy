@@ -48,7 +48,7 @@ class Index implements RestApiController {
 
 		DataSource ds = getDatasource(datasource);
 		def obj = getData(ds.getConnection(), filters);
-		LOGGER.severe("result : " + obj);
+		//LOGGER.severe("result : " + obj);
 
 		// Send the result as a JSON representation
 		// You may use buildPagedResponse if your result is multiple
@@ -108,15 +108,22 @@ class Index implements RestApiController {
 
 		// attributes
 		sb.append(" PERSISTENCEID AS \"persistenceId\",");
-		sb.append(" FAMILLEDEMANDE AS \"famille\",");
+		sb.append(" FAMILLEDEMANDE AS \"familleDemande\",");
+		sb.append(" SOUSFAMILLEDEMANDE AS \"sousFamilleDemande\",");
+		sb.append(" DETAILDEMANDE AS \"detailDemande\",");
 		sb.append(" CASEID AS \"caseId\",");
 		sb.append(" DATEDEMANDE AS \"dateDemande\",");
 		sb.append(" LIBELLEDEMANDE AS \"libelleDemande\",");
-		sb.append(" STATUTDEMANDE AS \"statutDemande\"");
+		sb.append(" STATUTDEMANDE AS \"statutDemande\",");
+		sb.append(" IDDEMANDEUR AS \"idDemandeur\"");
 		sb.append(" FROM DemandeConciergerie WHERE 1=1");
 
-		if (filters.famille != null && filters.famille.size() > 0){
-			sb.append(" AND FAMILLEDEMANDE = '").append(filters.famille.replaceAll("'", "''")).append("'");
+		if (filters.sousFamilleDemande != null && filters.sousFamilleDemande.size() > 0){
+			sb.append(" AND SOUSFAMILLEDEMANDE = '").append(filters.sousFamilleDemande.replaceAll("'", "''")).append("'");
+		}
+		
+		if (filters.familleDemande != null && filters.familleDemande.size() > 0){
+			sb.append(" AND FAMILLEDEMANDE = '").append(filters.familleDemande.replaceAll("'", "''")).append("'");
 		}
 
 		if (filters.statut != null && filters.statut.size() > 0 && !filters.statut.equals("Brouillon")){
@@ -128,6 +135,10 @@ class Index implements RestApiController {
 
 		if (filters.demandeur != null && filters.demandeur != -1){
 			sb.append(" AND IDDEMANDEUR = ").append(filters.demandeur);
+		}
+		
+		if (filters.caseId != null && filters.caseId != -1){
+			sb.append(" AND CASEID = ").append(filters.caseId);
 		}
 
 		DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");

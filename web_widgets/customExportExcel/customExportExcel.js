@@ -15,12 +15,13 @@
 
   this.action = function action() {
 
-    //var header = {"processName": "Processus","taskName":"Nom de la tache", "taskDescription":"Description de la tache","taskActor": "Entité responsable","planification": "Planification", "datePlanification":"Date prévisionnelle de livraison"};
+    //var header = {"statutDemande": "Statut de la demande","caseId":"Numéro de la demande", "famille" : "Famille", "sousFamille":"Sous Famille","dateDemande": "Date de la demande","libelleDemande": "Libéllé de la demande"};
 	//$scope.exportedData = angular.copy($scope.taskDetails);
 	//$scope.exportedData = $filter('filter')($scope.exportedData, $scope.customFilter);
 	
-	//$scope.properties.exportedData.unshift($scope.properties.header);
-	alasql('SELECT * INTO XLSX("' + $scope.properties.filename +'",{headers:true}) FROM ?',[$scope.properties.exportedData]);
+	$scope.properties.exportedData.unshift($scope.properties.header);
+	//$scope.properties.exportedData.unshift(header);
+	alasql('SELECT * INTO XLSX("' + $scope.properties.filename +'",{headers:false}) FROM ?',[$scope.properties.exportedData]);
   };
 }
 ,

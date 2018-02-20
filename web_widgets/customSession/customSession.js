@@ -27,7 +27,7 @@ function WidgetsimpleButtonController($scope, $http, $location) {
         $http.get('/bonita/API/identity/user/'+id).success(function(data){
             $scope.firstName = data.firstname;
             $scope.lastName = data.lastname;
-            $scope.icon = "/bonita/portal/attachmentImage?src="+data.icon;
+            $scope.icon = "/bonita/portal/images/avatar-default.gif";
         });
     }
     

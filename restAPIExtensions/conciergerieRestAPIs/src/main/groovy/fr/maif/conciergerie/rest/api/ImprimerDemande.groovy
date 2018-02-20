@@ -6,16 +6,15 @@ import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
 import org.apache.commons.io.IOUtils
-import org.apache.commons.lang.StringUtils
 import org.apache.http.HttpHeaders
 import org.bonitasoft.engine.api.ProcessAPI
-import org.bonitasoft.engine.bpm.document.ArchivedDocument;
+import org.bonitasoft.engine.bpm.document.ArchivedDocument
 import org.bonitasoft.engine.bpm.document.ArchivedDocumentsSearchDescriptor
 import org.bonitasoft.engine.bpm.document.Document
 import org.bonitasoft.engine.bpm.document.DocumentNotFoundException
 import org.bonitasoft.engine.bpm.flownode.HumanTaskInstance
 import org.bonitasoft.engine.bpm.flownode.HumanTaskInstanceSearchDescriptor
-import org.bonitasoft.engine.search.Order;
+import org.bonitasoft.engine.search.Order
 import org.bonitasoft.engine.search.SearchOptionsBuilder
 import org.bonitasoft.engine.search.SearchResult
 import org.bonitasoft.web.extension.ResourceProvider
@@ -29,13 +28,6 @@ import fr.bonitasoft.modele.DemandeConciergerie
 import fr.bonitasoft.modele.DemandeConciergerieDAO
 import fr.bonitasoft.modele.DemandeConciergerieDAOImpl
 import fr.opensagres.xdocreport.converter.*
-import fr.opensagres.xdocreport.core.XDocReportException
-import fr.opensagres.xdocreport.document.IXDocReport
-import fr.opensagres.xdocreport.document.registry.XDocReportRegistry
-import fr.opensagres.xdocreport.template.IContext
-import fr.opensagres.xdocreport.template.TemplateEngineKind
-import fr.opensagres.xdocreport.template.formatter.FieldsMetadata
-import fr.opensagres.xdocreport.template.velocity.internal.VelocityTemplateEngine
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 
@@ -49,18 +41,12 @@ class ImprimerDemande implements RestApiController {
 		// To retrieve query parameters use the request.getParameter(..) method.
 		// Be careful, parameter values are always returned as String values
 
-		System.setProperty("org.xml.sax.driver", "com.sun.org.apache.xerces.internal.parsers.SAXParser");
 		// Retrieve p parameter
 		def caseId = request.getParameter "caseId"
 		if (caseId == null) {
 			return buildResponse(responseBuilder, HttpServletResponse.SC_BAD_REQUEST,"""{"error" : "the parameter caseId is missing"}""")
 		}
 		
-//		def demandeId = request.getParameter "demandeId"
-//		if (demandeId == null) {
-//			return buildResponse(responseBuilder, HttpServletResponse.SC_BAD_REQUEST,"""{"error" : "the parameter demandeId is missing"}""")
-//		}
-
 		def userId = request.getParameter "userId"
 		if (userId == null) {
 			return buildResponse(responseBuilder, HttpServletResponse.SC_BAD_REQUEST,"""{"error" : "the parameter userId is missing"}""")
@@ -183,53 +169,53 @@ class ImprimerDemande implements RestApiController {
 		content
 	}
 
-	byte[] applyReplacements(byte[] content, RestAPIContext apiContext, Long demandeId, ResourceProvider resourceProvider) {
-		try {
-			final IXDocReport report = XDocReportRegistry.getRegistry().loadReport(new ByteArrayInputStream(content), TemplateEngineKind.Velocity);
-			//LOGGER.severe("content is : " + content);
-			final IContext context = report.createContext();
-			
-			Properties props = loadProperties("xdocreport-velocity.properties", resourceProvider);
-			
-			VelocityTemplateEngine engine = new VelocityTemplateEngine(props);
-			report.setTemplateEngine(engine);
-			
-			FieldsMetadata metadata = new FieldsMetadata();
-			metadata.addFieldAsList("entry.key");
-			metadata.addFieldAsList("entry.value");
-			report.setFieldsMetadata(metadata);
-
-			DemandeConciergerieDAO dao = new DemandeConciergerieDAOImpl(apiContext.apiSession);
-			DemandeConciergerie demande = dao.findByPersistenceId(demandeId);
-
-			Map<String,String> humanReadable =  new HashMap();
-			Map details = new JsonSlurper().parseText(demande.detailDemande);
-
-			details.each {entry ->
-				humanReadable.put(StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(entry.key),' '), entry.value);
-			}
-
-			context.put("demandeService", demande);
-			context.put("demandeur", apiContext.apiClient.identityAPI.getUser(demande.idDemandeur));
-			context.put("email", apiContext.apiClient.identityAPI.getUserContactData(demande.idDemandeur, false).email);
-			context.put("details", humanReadable);
-
-			//			for (final List<Object> objects : inputParameter) {
-			//				if (objects != null && objects.size() > 1) {
-			//					context.put(String.valueOf(objects.get(0)), objects.get(1));
-			//				}
-			//			}
-
-			Options options = Options.getTo(ConverterTypeTo.PDF);
-			
-			final ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-			report.convert(context, options, byteArrayOutputStream);
-			//report.process(context, byteArrayOutputStream);
-
-			return byteArrayOutputStream.toByteArray();
-		} catch (final IOException | XDocReportException e) {
-			throw new Exception(e);
-		}
-	}
+//	byte[] applyReplacements(byte[] content, RestAPIContext apiContext, Long demandeId, ResourceProvider resourceProvider) {
+//		try {
+//			final IXDocReport report = XDocReportRegistry.getRegistry().loadReport(new ByteArrayInputStream(content), TemplateEngineKind.Velocity);
+//			//LOGGER.severe("content is : " + content);
+//			final IContext context = report.createContext();
+//			
+//			Properties props = loadProperties("xdocreport-velocity.properties", resourceProvider);
+//			
+//			VelocityTemplateEngine engine = new VelocityTemplateEngine(props);
+//			report.setTemplateEngine(engine);
+//			
+//			FieldsMetadata metadata = new FieldsMetadata();
+//			metadata.addFieldAsList("entry.key");
+//			metadata.addFieldAsList("entry.value");
+//			report.setFieldsMetadata(metadata);
+//
+//			DemandeConciergerieDAO dao = new DemandeConciergerieDAOImpl(apiContext.apiSession);
+//			DemandeConciergerie demande = dao.findByPersistenceId(demandeId);
+//
+//			Map<String,String> humanReadable =  new HashMap();
+//			Map details = new JsonSlurper().parseText(demande.detailDemande);
+//
+//			details.each {entry ->
+//				humanReadable.put(StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(entry.key),' '), entry.value);
+//			}
+//
+//			context.put("demandeService", demande);
+//			context.put("demandeur", apiContext.apiClient.identityAPI.getUser(demande.idDemandeur));
+//			context.put("email", apiContext.apiClient.identityAPI.getUserContactData(demande.idDemandeur, false).email);
+//			context.put("details", humanReadable);
+//
+//			//			for (final List<Object> objects : inputParameter) {
+//			//				if (objects != null && objects.size() > 1) {
+//			//					context.put(String.valueOf(objects.get(0)), objects.get(1));
+//			//				}
+//			//			}
+//
+//			Options options = Options.getTo(ConverterTypeTo.PDF);
+//			
+//			final ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+//			report.convert(context, options, byteArrayOutputStream);
+//			//report.process(context, byteArrayOutputStream);
+//
+//			return byteArrayOutputStream.toByteArray();
+//		} catch (final IOException | XDocReportException e) {
+//			throw new Exception(e);
+//		}
+//	}
 
 }

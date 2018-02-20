@@ -684,6 +684,9 @@
     <role name="Manager">
       <displayName>Manager</displayName>
     </role>
+    <role name="Concierge">
+      <displayName>Concierge</displayName>
+    </role>
   </roles>
   <groups>
     <group name="MAIF">
@@ -1151,6 +1154,16 @@
     <membership>
       <userName>margaux.tribaudeau</userName>
       <roleName>Utilisateur</roleName>
+      <groupName>MAIF</groupName>
+    </membership>
+    <membership>
+      <userName>gelin.emmanuel</userName>
+      <roleName>Concierge</roleName>
+      <groupName>MAIF</groupName>
+    </membership>
+    <membership>
+      <userName>mehdi</userName>
+      <roleName>Concierge</roleName>
       <groupName>MAIF</groupName>
     </membership>
   </memberships>

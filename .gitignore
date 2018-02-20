@@ -6,6 +6,7 @@
 /process_configurations
 /META-INF
 /.settings
-/target/
+target
 /web_widgets/pb*/
 /lib/bdm-client-pojo.jar
+application_resources
