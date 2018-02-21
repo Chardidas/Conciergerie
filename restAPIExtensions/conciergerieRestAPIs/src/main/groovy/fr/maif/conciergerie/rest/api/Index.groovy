@@ -115,6 +115,7 @@ class Index implements RestApiController {
 		sb.append(" DATEDEMANDE AS \"dateDemande\",");
 		sb.append(" LIBELLEDEMANDE AS \"libelleDemande\",");
 		sb.append(" STATUTDEMANDE AS \"statutDemande\",");
+		sb.append(" NUMTELEPHONE AS \"numTelephone\",");
 		sb.append(" IDDEMANDEUR AS \"idDemandeur\"");
 		sb.append(" FROM DemandeConciergerie WHERE 1=1");
 
