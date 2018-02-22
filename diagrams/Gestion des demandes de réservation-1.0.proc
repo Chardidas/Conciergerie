@@ -19,11 +19,15 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_l9MbXxHOEeidoJu4zQwtRA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_l9NCYBHOEeidoJu4zQwtRA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_l9NCYRHOEeidoJu4zQwtRA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <BoundaryIntermediateEvents xmi:type="process:BoundaryTimerEvent" xmi:id="_HuPE4BgaEei_S-maz_bmNA" name="Attend la fin de l'offre" outgoing="_M3xKgBgaEei_S-maz_bmNA"/>
+          <BoundaryIntermediateEvents xmi:type="process:BoundaryTimerEvent" xmi:id="_HuPE4BgaEei_S-maz_bmNA" name="Attend la fin de l'offre" outgoing="_M3xKgBgaEei_S-maz_bmNA">
+            <condition xmi:type="expression:Expression" xmi:id="_NUy9YBgdEei_S-maz_bmNA" name="dateFinOffre" content="reservation.offre.dateFin" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_NUy9YRgdEei_S-maz_bmNA" name="reservation" dataType="_l9NCwxHOEeidoJu4zQwtRA" className="fr.bonitasoft.modele.ReservationConciergerie"/>
+            </condition>
+          </BoundaryIntermediateEvents>
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_l9NCYhHOEeidoJu4zQwtRA" name="" content="" returnTypeFixed="true"/>
           <confirmationMessage xmi:type="expression:Expression" xmi:id="_l9NCYxHOEeidoJu4zQwtRA" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_l9NCZBHOEeidoJu4zQwtRA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_l9NCZRHOEeidoJu4zQwtRA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_2RV2kBghEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_l9NCZhHOEeidoJu4zQwtRA"/>
         </elements>
@@ -67,7 +71,7 @@
       <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_l9NCkBHOEeidoJu4zQwtRA" name="" content="" returnTypeFixed="true"/>
       <confirmationMessage xmi:type="expression:Expression" xmi:id="_l9NCkRHOEeidoJu4zQwtRA" name="" content="" returnTypeFixed="true"/>
       <formMapping xmi:type="process:FormMapping" xmi:id="_l9NCkhHOEeidoJu4zQwtRA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_D26qgBgZEei_S-maz_bmNA" name="nouvelleDemandeReservation" content="d0044166-ea44-44df-991b-fc95f32b868c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_x1NbwBgcEei_S-maz_bmNA" name="nouvelleDemandeReservation" content="7ecd56ad-ffec-4a64-99d3-4d685fbda200" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <recapPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_l9NClBHOEeidoJu4zQwtRA" name="" content="" returnTypeFixed="true"/>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_l9NClRHOEeidoJu4zQwtRA">
@@ -93,13 +97,9 @@
           <inputs xmi:type="process:ContractInput" xmi:id="_ePWzUhgYEei_S-maz_bmNA" name="panier" type="COMPLEX" multiple="true">
             <inputs xmi:type="process:ContractInput" xmi:id="_ePWzUxgYEei_S-maz_bmNA" name="produit" type="COMPLEX">
               <inputs xmi:type="process:ContractInput" xmi:id="_ePWzVBgYEei_S-maz_bmNA" name="persistenceId"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_ePWzVRgYEei_S-maz_bmNA" name="nom"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_ePWzVhgYEei_S-maz_bmNA" name="prixUnitaire" type="DECIMAL"/>
             </inputs>
             <inputs xmi:type="process:ContractInput" xmi:id="_ePWzVxgYEei_S-maz_bmNA" name="quantite" type="INTEGER"/>
           </inputs>
-          <inputs xmi:type="process:ContractInput" xmi:id="_ePWzWBgYEei_S-maz_bmNA" name="dateDemande" type="DATE"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_ePWzWRgYEei_S-maz_bmNA" name="numeroReservation"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_ePWzWhgYEei_S-maz_bmNA" name="offre" type="COMPLEX">
             <inputs xmi:type="process:ContractInput" xmi:id="_ePWzWxgYEei_S-maz_bmNA" name="persistenceId"/>
           </inputs>
@@ -158,7 +158,7 @@
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_p4ZoJBgaEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <confirmationMessage xmi:type="expression:Expression" xmi:id="_p4ZoJRgaEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_p4ZoLBgaEei_S-maz_bmNA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_p4ZoLRgaEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_2XrIEBghEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_p4ZoKxgaEei_S-maz_bmNA"/>
         </elements>
@@ -167,8 +167,11 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_6h6YEBgaEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_6h5xARgaEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_6h6YERgaEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
+          <condition xmi:type="expression:Expression" xmi:id="_Io7EIBgdEei_S-maz_bmNA" name="dateFinOffre" content="offreReservation.dateFin" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Io7EIRgdEei_S-maz_bmNA" name="offreReservation" dataType="_l9NCwxHOEeidoJu4zQwtRA" className="fr.bonitasoft.modele.OffreReservation"/>
+          </condition>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_A8rcEBgbEei_S-maz_bmNA" name="Emails aux utilisateurs" outgoing="_BxpVMBgbEei_S-maz_bmNA" incoming="_A8ufYBgbEei_S-maz_bmNA">
+        <elements xmi:type="process:ServiceTask" xmi:id="_A8rcEBgbEei_S-maz_bmNA" name="Emails invitation aux utilisateurs" outgoing="_BxpVMBgbEei_S-maz_bmNA" incoming="_A8ufYBgbEei_S-maz_bmNA">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_A8sDIhgbEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_A8sDIBgbEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_A8rcERgbEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
@@ -198,11 +201,11 @@
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_XahiJBgbEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <confirmationMessage xmi:type="expression:Expression" xmi:id="_XahiJRgbEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_XahiLBgbEei_S-maz_bmNA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_XahiLRgbEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_2XrIERghEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_XahiKxgbEei_S-maz_bmNA"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_YSlLgBgbEei_S-maz_bmNA" name="Emails aux utilisateurs" outgoing="_YgYW8BgbEei_S-maz_bmNA" incoming="_YSoO0BgbEei_S-maz_bmNA">
+        <elements xmi:type="process:ServiceTask" xmi:id="_YSlLgBgbEei_S-maz_bmNA" name="Emails pret aux utilisateurs" outgoing="_YgYW8BgbEei_S-maz_bmNA" incoming="_YSoO0BgbEei_S-maz_bmNA">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_YSlLhBgbEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_YSlLghgbEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_YSlLgRgbEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
