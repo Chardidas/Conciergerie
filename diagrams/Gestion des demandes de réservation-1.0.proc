@@ -27,7 +27,7 @@
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_l9NCYhHOEeidoJu4zQwtRA" name="" content="" returnTypeFixed="true"/>
           <confirmationMessage xmi:type="expression:Expression" xmi:id="_l9NCYxHOEeidoJu4zQwtRA" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_l9NCZBHOEeidoJu4zQwtRA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_2RV2kBghEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_so7mUBgrEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_l9NCZhHOEeidoJu4zQwtRA"/>
         </elements>
@@ -46,25 +46,21 @@
       <pageTemplate xmi:type="process:AssociatedFile" xmi:id="_l9NCgRHOEeidoJu4zQwtRA" path="_l9MbURHOEeidoJu4zQwtRA/html/page.html"/>
       <consultationTemplate xmi:type="process:AssociatedFile" xmi:id="_l9NCghHOEeidoJu4zQwtRA" path="_l9MbURHOEeidoJu4zQwtRA/html/consultation.html"/>
       <data xmi:type="process:BusinessObjectData" xmi:id="_M4uesBgYEei_S-maz_bmNA" name="reservation" dataType="_l9NCwxHOEeidoJu4zQwtRA" className="fr.bonitasoft.modele.ReservationConciergerie">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_ePYBcBgYEei_S-maz_bmNA" name="initReservation()" content="def reservationConciergerieVar = new fr.bonitasoft.modele.ReservationConciergerie()&#xD;&#xA;reservationConciergerieVar.idDemandeur = reservationInput.idDemandeur.toLong()&#xD;&#xA;reservationConciergerieVar.panier = {&#xD;&#xA;&#x9;def elementPanierList = []&#xD;&#xA;&#x9;//For each item collected in multiple input&#xD;&#xA;&#x9;reservationInput.panier.each{&#xD;&#xA;&#x9;&#x9;//Add a new composed ElementPanier instance&#xD;&#xA;&#x9;&#x9;elementPanierList.add({ currentElementPanierInput ->&#xD;&#xA;&#x9;&#x9;&#x9;def elementPanierVar = new fr.bonitasoft.modele.ElementPanier()&#xD;&#xA;&#x9;&#x9;&#x9;elementPanierVar.produit = {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//Retrieve aggregated Produit using its DAO and persistenceId&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;def produitVar = produitDAO.findByPersistenceId(currentElementPanierInput.produit.persistenceId.toLong())&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;produitVar.nom = currentElementPanierInput.produit.nom&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;produitVar.prixUnitaire = currentElementPanierInput.produit.prixUnitaire.toFloat()&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;return produitVar}()&#xD;&#xA;&#x9;&#x9;&#x9;elementPanierVar.quantite = currentElementPanierInput.quantite&#xD;&#xA;&#x9;&#x9;&#x9;return elementPanierVar&#xD;&#xA;&#x9;&#x9;}(it))&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return elementPanierList}()&#xD;&#xA;reservationConciergerieVar.dateDemande = reservationInput.dateDemande&#xD;&#xA;reservationConciergerieVar.numeroReservation = reservationInput.numeroReservation.toLong()&#xD;&#xA;reservationConciergerieVar.offre = {&#xD;&#xA;&#x9;//Retrieve aggregated OffreReservation using its DAO and persistenceId&#xD;&#xA;&#x9;def offreReservationVar = offreReservationDAO.findByPersistenceId(reservationInput.offre.persistenceId.toLong())&#xD;&#xA;&#x9;return offreReservationVar}()&#xD;&#xA;return reservationConciergerieVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="fr.bonitasoft.modele.ReservationConciergerie">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_ePYBcRgYEei_S-maz_bmNA" name="reservationInput" type="COMPLEX">
-            <inputs xmi:type="process:ContractInput" xmi:id="_ePYBchgYEei_S-maz_bmNA" name="idDemandeur"/>
-            <inputs xmi:type="process:ContractInput" xmi:id="_ePYBcxgYEei_S-maz_bmNA" name="panier" type="COMPLEX" multiple="true">
-              <inputs xmi:type="process:ContractInput" xmi:id="_ePYBdBgYEei_S-maz_bmNA" name="produit" type="COMPLEX">
-                <inputs xmi:type="process:ContractInput" xmi:id="_ePYBdRgYEei_S-maz_bmNA" name="persistenceId"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_ePYBdhgYEei_S-maz_bmNA" name="nom"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_ePYBdxgYEei_S-maz_bmNA" name="prixUnitaire" type="DECIMAL"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_at_OQBgsEei_S-maz_bmNA" name="initReservation()" content="def reservationConciergerieVar = new fr.bonitasoft.modele.ReservationConciergerie()&#xD;&#xA;reservationConciergerieVar.idDemandeur = reservationInput.idDemandeur.toLong()&#xD;&#xA;reservationConciergerieVar.panier = {&#xD;&#xA;&#x9;def elementPanierList = []&#xD;&#xA;&#x9;//For each item collected in multiple input&#xD;&#xA;&#x9;reservationInput.panier.each{&#xD;&#xA;&#x9;&#x9;//Add a new composed ElementPanier instance&#xD;&#xA;&#x9;&#x9;elementPanierList.add({ currentElementPanierInput ->&#xD;&#xA;&#x9;&#x9;&#x9;def elementPanierVar = new fr.bonitasoft.modele.ElementPanier()&#xD;&#xA;&#x9;&#x9;&#x9;elementPanierVar.produit = {&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;//Retrieve aggregated Produit using its DAO and persistenceId&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;return produitDAO.findByPersistenceId(currentElementPanierInput.produit.persistenceId.toLong())&#xD;&#xA;&#x9;&#x9;&#x9;}()&#xD;&#xA;&#x9;&#x9;&#x9;elementPanierVar.quantite = currentElementPanierInput.quantite&#xD;&#xA;&#x9;&#x9;&#x9;return elementPanierVar&#xD;&#xA;&#x9;&#x9;}(it))&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return elementPanierList}()&#xD;&#xA;reservationConciergerieVar.dateDemande = new Date()&#xD;&#xA;reservationConciergerieVar.offre = {&#xD;&#xA;&#x9;//Retrieve aggregated OffreReservation using its DAO and persistenceId&#xD;&#xA;&#x9;return offreReservationDAO.findByPersistenceId(reservationInput.offre.persistenceId.toLong())&#xD;&#xA;}()&#xD;&#xA;return reservationConciergerieVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="fr.bonitasoft.modele.ReservationConciergerie">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_at_OQRgsEei_S-maz_bmNA" name="offreReservationDAO" content="offreReservationDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="fr.bonitasoft.modele.OffreReservationDAO" returnTypeFixed="true"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_at_OQhgsEei_S-maz_bmNA" name="produitDAO" content="produitDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="fr.bonitasoft.modele.ProduitDAO" returnTypeFixed="true"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_at_1UBgsEei_S-maz_bmNA" name="reservationInput" type="COMPLEX">
+            <inputs xmi:type="process:ContractInput" xmi:id="_at_1URgsEei_S-maz_bmNA" name="idDemandeur"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_at_1UhgsEei_S-maz_bmNA" name="panier" type="COMPLEX" multiple="true">
+              <inputs xmi:type="process:ContractInput" xmi:id="_at_1UxgsEei_S-maz_bmNA" name="produit" type="COMPLEX">
+                <inputs xmi:type="process:ContractInput" xmi:id="_at_1VBgsEei_S-maz_bmNA" name="persistenceId"/>
               </inputs>
-              <inputs xmi:type="process:ContractInput" xmi:id="_ePYBeBgYEei_S-maz_bmNA" name="quantite" type="INTEGER"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_at_1VRgsEei_S-maz_bmNA" name="quantite" type="INTEGER"/>
             </inputs>
-            <inputs xmi:type="process:ContractInput" xmi:id="_ePYBeRgYEei_S-maz_bmNA" name="dateDemande" type="DATE"/>
-            <inputs xmi:type="process:ContractInput" xmi:id="_ePYBehgYEei_S-maz_bmNA" name="numeroReservation"/>
-            <inputs xmi:type="process:ContractInput" xmi:id="_ePYBexgYEei_S-maz_bmNA" name="offre" type="COMPLEX">
-              <inputs xmi:type="process:ContractInput" xmi:id="_ePYBfBgYEei_S-maz_bmNA" name="persistenceId"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_at_1VhgsEei_S-maz_bmNA" name="offre" type="COMPLEX">
+              <inputs xmi:type="process:ContractInput" xmi:id="_at_1VxgsEei_S-maz_bmNA" name="persistenceId"/>
             </inputs>
           </referencedElements>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_ePYBfRgYEei_S-maz_bmNA" name="offreReservationDAO" content="offreReservationDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="fr.bonitasoft.modele.OffreReservationDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_ePYBfhgYEei_S-maz_bmNA" name="produitDAO" content="produitDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="fr.bonitasoft.modele.ProduitDAO" returnTypeFixed="true"/>
         </defaultValue>
       </data>
       <confirmationTemplate xmi:type="process:AssociatedFile" xmi:id="_l9NCjxHOEeidoJu4zQwtRA" path="_l9MbURHOEeidoJu4zQwtRA/html/_l9MbURHOEeidoJu4zQwtRAconfirmation.html"/>
@@ -158,7 +154,7 @@
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_p4ZoJBgaEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <confirmationMessage xmi:type="expression:Expression" xmi:id="_p4ZoJRgaEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_p4ZoLBgaEei_S-maz_bmNA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_2XrIEBghEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_st3JoBgrEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_p4ZoKxgaEei_S-maz_bmNA"/>
         </elements>
@@ -201,7 +197,7 @@
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_XahiJBgbEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <confirmationMessage xmi:type="expression:Expression" xmi:id="_XahiJRgbEei_S-maz_bmNA" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_XahiLBgbEei_S-maz_bmNA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_2XrIERghEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_st3JoRgrEei_S-maz_bmNA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_XahiKxgbEei_S-maz_bmNA"/>
         </elements>
