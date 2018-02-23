@@ -1,0 +1,33 @@
+.historyWL{
+    margin: 5px 0;
+    padding: 0px;
+    border-left: 2px solid #f2e8e8;
+}
+.msj-rta{
+    float:right;
+}
+.msj{
+    float:left;
+}
+.historyWL p{
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    padding: 5px;
+    background: #fafafa;
+    color: #686363;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.historyWL p span{
+    display: block;
+    font-weight: bold;
+    color: #337ab7;
+    
+}
+.historyWL p span.date{
+    font-style: italic;
+    font-size: 11px;
+    margin: 0px 10px;
+    display: inline;
+    font-weight: lighter;
+}
