@@ -17,6 +17,16 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+		    <groupId>commons-codec</groupId>
+		    <artifactId>commons-codec</artifactId>
+		    <version>1.7</version>
+		</dependency>
+		<dependency>
 			<groupId>com.bonitasoft.web</groupId>
 			<artifactId>bonita-web-extensions-sp</artifactId>
 			<version>${bonita.version}</version>
