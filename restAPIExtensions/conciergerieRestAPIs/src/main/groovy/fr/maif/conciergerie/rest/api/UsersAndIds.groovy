@@ -3,17 +3,20 @@ package fr.maif.conciergerie.rest.api
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 
+import java.util.logging.Logger
+
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
 import org.apache.http.HttpHeaders
-import org.bonitasoft.engine.identity.ContactData
 import org.bonitasoft.engine.identity.User
-import org.bonitasoft.engine.identity.UserCriterion
+import org.bonitasoft.engine.identity.UserSearchDescriptor
+import org.bonitasoft.engine.search.Order;
+import org.bonitasoft.engine.search.SearchOptionsBuilder
+import org.bonitasoft.engine.search.SearchResult
 import org.bonitasoft.web.extension.ResourceProvider
 import org.bonitasoft.web.extension.rest.RestApiResponse
 import org.bonitasoft.web.extension.rest.RestApiResponseBuilder
-import java.util.logging.Logger;
 
 import com.bonitasoft.web.extension.rest.RestAPIContext
 import com.bonitasoft.web.extension.rest.RestApiController
@@ -41,8 +44,11 @@ class UsersAndIds implements RestApiController {
 		
 		def jsonSlurper = new JsonSlurper()
 		List<String> usersResponse = new  ArrayList();
-		List<User> users = context.getApiClient().getIdentityAPI().getUsers(Integer.valueOf(p), Integer.valueOf(c), UserCriterion.FIRST_NAME_ASC);
-		for (User user : users){
+		SearchOptionsBuilder builder = new SearchOptionsBuilder(Integer.valueOf(p), Integer.valueOf(c));
+		builder.filter(UserSearchDescriptor.ENABLED, true);
+		builder.sort(UserSearchDescriptor.FIRST_NAME, Order.ASC);
+		SearchResult<User> users = context.getApiClient().getIdentityAPI().searchUsers(builder.done());
+		for (User user : users.getResult()){
 			def usr = '''{}''';
 			def obj = jsonSlurper.parseText(usr);
 			obj.userId = user.id;

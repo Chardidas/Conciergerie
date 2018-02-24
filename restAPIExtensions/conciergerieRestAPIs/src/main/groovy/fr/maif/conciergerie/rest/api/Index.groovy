@@ -112,22 +112,24 @@ class Index implements RestApiController {
 		sb.append(" SOUSFAMILLEDEMANDE AS \"sousFamilleDemande\",");
 		sb.append(" DETAILDEMANDE AS \"detailDemande\",");
 		sb.append(" CASEID AS \"caseId\",");
-		sb.append(" DATEDEMANDE AS \"dateDemande\",");
+		sb.append(" SUBSTRING(DATEDEMANDE, 0,10) AS \"dateDemande\",");
+		sb.append(" SUBSTRING(DATEDERNIEREMODIF, 0,10) AS \"dateDerniereModif\",");
 		sb.append(" LIBELLEDEMANDE AS \"libelleDemande\",");
 		sb.append(" STATUTDEMANDE AS \"statutDemande\",");
 		sb.append(" NUMTELEPHONE AS \"numTelephone\",");
-		sb.append(" IDDEMANDEUR AS \"idDemandeur\"");
+		sb.append(" IDDEMANDEUR AS \"idDemandeur\",");
+		sb.append(" FULLNAMEDEMANDEUR AS \"fullNameDemandeur\"");
 		sb.append(" FROM DemandeConciergerie WHERE 1=1");
 
-		if (filters.sousFamilleDemande != null && filters.sousFamilleDemande.size() > 0){
+		if (!filters.sousFamilleDemande.equals("Tous") && filters.sousFamilleDemande != null && filters.sousFamilleDemande != ""){
 			sb.append(" AND SOUSFAMILLEDEMANDE = '").append(filters.sousFamilleDemande.replaceAll("'", "''")).append("'");
 		}
 		
-		if (filters.familleDemande != null && filters.familleDemande.size() > 0){
+		if (!filters.familleDemande.equals("Tous") && filters.familleDemande != null){
 			sb.append(" AND FAMILLEDEMANDE = '").append(filters.familleDemande.replaceAll("'", "''")).append("'");
 		}
 
-		if (filters.statut != null && filters.statut.size() > 0 && !filters.statut.equals("Brouillon")){
+		if (!filters.statut.equals("Tous") && filters.statut != null){
 			sb.append(" AND STATUTDEMANDE = '").append(filters.statut.replaceAll("'", "''")).append("'");
 		} else {
 			// in case no statut filter is provided, take all values except Brouillon

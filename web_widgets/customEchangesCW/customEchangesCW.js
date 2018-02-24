@@ -16,7 +16,6 @@
  * You can leave the controller empty if you do not need it.
  */
 function ($scope) {
-    var white = 'white';
     
     this.customFormat = function(maDate){
         return moment(maDate).locale("fr").format('LLL');
