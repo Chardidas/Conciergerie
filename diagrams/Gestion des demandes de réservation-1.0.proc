@@ -402,7 +402,7 @@
       </formMapping>
       <recapPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_TEI14BgJEeinUvkkJO2IgA" name="" content="" returnTypeFixed="true"/>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_TEI14xgJEeinUvkkJO2IgA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_HrbXgBjVEeirQ68lv1tUFQ" name="syntheseOffre" content="94ed89be-ab60-436e-bff5-9858c2bc5e78" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_HrbXgBjVEeirQ68lv1tUFQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_TEIO3xgJEeinUvkkJO2IgA" name="" content="" returnTypeFixed="true"/>
       <connections xmi:type="process:SequenceFlow" xmi:id="_VgrroBgbEei_S-maz_bmNA" target="_Xafs8BgbEei_S-maz_bmNA" source="_p4ZBEBgaEei_S-maz_bmNA">
