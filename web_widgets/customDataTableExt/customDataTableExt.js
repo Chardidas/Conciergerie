@@ -43,6 +43,10 @@
   this.isSelectable = function () {
     return $scope.properties.isBound('selectedRow');
   };
+    
+  this.hasActions = function () {
+    return $scope.properties.isBound('actions');
+  };
 
   /**
    * Create a request object following $http(request)
@@ -110,10 +114,6 @@
     if (this.isSelectable()) {
       $scope.properties.selectedRow = row;
     }
-  };
-  
-  this.hasActions = function () {
-    return $scope.properties.isBound('actions');
   };
 
   this.isColumnSortable = function(index) {
