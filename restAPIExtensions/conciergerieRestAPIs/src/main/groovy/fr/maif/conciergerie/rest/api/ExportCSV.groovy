@@ -149,7 +149,7 @@ class ExportCSV implements RestApiController {
 					elementConsolide.add(elementPanier.produit.nom);
 					elementConsolide.add(elementPanier.produit.prixUnitaire);
 					elementConsolide.add(elementPanier.quantite);
-					elementConsolide.add(0);
+					elementConsolide.add(elementPanier.produit.prixUnitaire * elementPanier.quantite);
 					
 					consolidatedBasket.put(elementPanier.produit.persistenceId + "", elementConsolide)
 				} else {
