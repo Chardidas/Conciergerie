@@ -11,6 +11,7 @@ public class GestionTemps {
 		calendar.add(Calendar.DAY_OF_MONTH, diff);
 		// Modifie l'heure de debut
 		calendar.set(Calendar.HOUR_OF_DAY, heure);
+		calendar.set(Calendar.MINUTE, 0);
 		return calendar.getTime()
 	}
 }
