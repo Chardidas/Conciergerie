@@ -690,6 +690,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_oRnEshs0Eeiwv5giiYUrhg" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_bPQhUBs3Eeiwv5giiYUrhg" target="_eisk0BszEeiwv5giiYUrhg" source="_T1rogBszEeiwv5giiYUrhg">
+        <expression xmi:type="expression:Expression" xmi:id="_VuKmIBvNEeiOo7bbFP9EcQ" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_bPQhURs3Eeiwv5giiYUrhg"/>
         <condition xmi:type="expression:Expression" xmi:id="_bPQhUhs3Eeiwv5giiYUrhg" name="estHebdomadaire" content="return offre.isHebdomadaire();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_b21MwBs5Eeiwv5giiYUrhg" name="offre" dataType="_l9NCwxHOEeidoJu4zQwtRA" className="fr.bonitasoft.modele.Offre"/>
@@ -700,8 +701,9 @@
         <condition xmi:type="expression:Expression" xmi:id="_hnAGgRs3Eeiwv5giiYUrhg" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_cqTZoBtQEeiOo7bbFP9EcQ" target="_R0R8ABs0Eeiwv5giiYUrhg" source="_cpsVoBtQEeiOo7bbFP9EcQ">
+        <expression xmi:type="expression:Expression" xmi:id="__uYccBvJEeiOo7bbFP9EcQ" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_cqUnwBtQEeiOo7bbFP9EcQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_cqUnwRtQEeiOo7bbFP9EcQ" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_cqUnwRtQEeiOo7bbFP9EcQ" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_fpFsgBswEeiwv5giiYUrhg" name="Concierge" initiator="true"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_vz6N8BszEeiwv5giiYUrhg" name="debug" typeClassname="java.lang.Boolean"/>
