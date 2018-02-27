@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="conciergerie" version="1.0" profile="User" homePage="tableaubordutilisateur" state="ACTIVATED" layout="custompage_defaultlayout" theme="custompage_bootstrapdefaulttheme">
+        <displayName>Conciergerie</displayName>
+        <description></description>
+        <iconPath></iconPath>
+        <applicationPages>
+            <applicationPage customPage="custompage_tableauBordUtilisateur" token="tableaubordutilisateur"/>
+            <applicationPage customPage="custompage_tableauBoardConcierge" token="tableaubordconcierge"/>
+            <applicationPage customPage="custompage_detailsOffreReservation" token="detailsOffreReservation"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="tableaubordutilisateur">
+                <displayName>Utilisateur</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="tableaubordconcierge">
+                <displayName>Concierge</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>
