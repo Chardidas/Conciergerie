@@ -25,19 +25,23 @@
         this.expl="noreturnkey";
         return this.valuebrut;
       } else {
-        $scope.properties.value = this.valuebrut[ $scope.properties.returnKey ];
-        this.expl="returnkey["+$scope.properties.returnKey+"]";
-        return this.valuebrut[ $scope.properties.returnKey ];
+          if ($scope.properties.availableValues && this.valuebrut){
+            $scope.properties.value = this.valuebrut[ $scope.properties.returnKey ];
+            this.expl="returnkey["+$scope.properties.returnKey+"]";
+            return this.valuebrut[ $scope.properties.returnKey ];
+          } else {
+              //console.log( "availableValues or valuebrut is undefined in autocomplete key");
+          }
       }
-  }
+  };
   this.setvalue = function ( value ) {
       if (! $scope.properties.returnKey) {
         // we can not do that
       } else if (! $scope.properties.availableValues ) {
-          console.log( "availableValues is undefined");
+          //console.log( "availableValues is undefined");
       } else {
     
-        console.log( "Set Value Avaialable value=["+JSON.stringify($scope.properties.availableValues)+"]");
+        //console.log( "list of Available values=["+JSON.stringify($scope.properties.availableValues)+"]");
               
           for (var i=0; i<  $scope.properties.availableValues.length; i++) {
               var item =  $scope.properties.availableValues[ i ];
@@ -48,7 +52,7 @@
               }
           }
       }
-  }
+  };
   
   
   this.getLabel = createGetter($scope.properties.displayedKey) || function (item) {

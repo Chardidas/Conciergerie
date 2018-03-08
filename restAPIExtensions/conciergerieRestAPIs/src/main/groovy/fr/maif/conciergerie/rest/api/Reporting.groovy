@@ -64,6 +64,10 @@ class Reporting implements RestApiController {
 			String querySousFamilles = "SELECT count (distinct(sousFAMILLEDEMANDE ) ) AS \"nombreSousFamilles\" FROM DemandeConciergerie WHERE 1=1 AND sousFAMILLEDEMANDE != ''"
 			def sousFamilles = getData(conn, filters, querySousFamilles)
 			results.putAll(sousFamilles)
+			
+			String queryDistributionParFamille = "SELECT count (FAMILLEDEMANDE) AS \"nombre\", FAMILLEDEMANDE FROM DemandeConciergerie WHERE 1=1"
+			def distribFamille = getData(conn, filters, queryDistributionParFamille)
+			results.putAll(distribFamille)
 
 //			def results = [nbUtilisateurs, familles, sousFamilles]
 			// Send the result as a JSON representation
@@ -124,13 +128,6 @@ class Reporting implements RestApiController {
 		ResultSet rs = null;
 		PreparedStatement pstmt = null;
 		StringBuilder sb = new StringBuilder(query);
-
-		// SELECT count(FAMILLEDEMANDE ), FAMILLEDEMANDE  FROM DEMANDECONCIERGERIE Group by FAMILLEDEMANDE ;
-		// SELECT count(distinct(idDEMANDEUR )) FROM DEMANDECONCIERGERIE ;
-		// SELECT count (distinct(sousFAMILLEDEMANDE ) )FROM DEMANDECONCIERGERIE where sousFAMILLEDEMANDE != '';
-		// SELECT count(distinct(FAMILLEDEMANDE )) FROM DEMANDECONCIERGERIE;
-
-//		sb.append(" FROM DemandeConciergerie WHERE 1=1");
 
 		DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		// dates

@@ -112,8 +112,8 @@ class Index implements RestApiController {
 		sb.append(" SOUSFAMILLEDEMANDE AS \"sousFamilleDemande\",");
 		sb.append(" DETAILDEMANDE AS \"detailDemande\",");
 		sb.append(" CASEID AS \"caseId\",");
-		sb.append(" SUBSTRING(DATEDEMANDE, 0,10) AS \"dateDemande\",");
-		sb.append(" SUBSTRING(DATEDERNIEREMODIF, 0,10) AS \"dateDerniereModif\",");
+		sb.append(" SUBSTR(DATEDEMANDE, 0,10) AS \"dateDemande\",");
+		sb.append(" SUBSTR(DATEDERNIEREMODIF, 0,10) AS \"dateDerniereModif\",");
 		sb.append(" LIBELLEDEMANDE AS \"libelleDemande\",");
 		sb.append(" STATUTDEMANDE AS \"statutDemande\",");
 		sb.append(" NUMTELEPHONE AS \"numTelephone\",");
