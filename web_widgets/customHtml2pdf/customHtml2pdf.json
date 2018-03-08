@@ -1,0 +1,75 @@
+{
+  "designerVersion" : "1.5.51",
+  "id" : "customHtml2pdf",
+  "name" : "html2pdf",
+  "lastUpdate" : 1520004238430,
+  "template" : "<!-- The custom widget template is defined here\n   - You can use standard HTML tags and AngularJS built-in directives, scope and interpolation system\n   - Custom widget properties defined on the right can be used as variables in a templates with properties.newProperty\n   - Functions exposed in the controller can be used with ctrl.newFunction()\n   - You can use the 'environment' property injected in the scope when inside the Editor whiteboard. It allows to define a mockup\n     of the Custom Widget to be displayed in the whiteboard only. By default the widget is represented by an auto-generated icon\n     and its name (See the <span> below).\n-->\n \n<button ng-click=\"ctrl.clicked()\" class=\"btn {{ properties.buttonStyle }}\">{{ properties.label }}</button>",
+  "controller" : "function generatePDF($scope) {\n    this.clicked = function(){\n    var fileName = $scope.properties.fileName;\n    var widthCanvas = $scope.properties.width;\n    var elementScope = $scope.properties.canvasScope;\n    var selectedClass = $scope.properties.selectedClass;\n\n    //first create canvas out of the entire body, and use then function that will be executed once the export is ready:\n    if (elementScope == \"body\") {\n        html2canvas(document.body).then(function(canvas){\n        var imageFullQuality = canvas.toDataURL();\n        var docDefinition = {\n            content: [{\n                image : imageFullQuality,\n                width : widthCanvas,\n            }]\n        };\n        new  pdfMake.createPdf(docDefinition).download(fileName + \".pdf\");\n        });\n    }\n    else {\n        //current version supports only one element with the given class name (the first one in the page)\n    html2canvas(document.querySelectorAll(\".\"+selectedClass)[0]).then(function(canvas){\n        var imageFullQuality = canvas.toDataURL();\n            var docDefinition = {\n                content: [{\n                    image : imageFullQuality,\n                    width : widthCanvas,\n                }]\n            };\n            new  pdfMake.createPdf(docDefinition).download(fileName + \".pdf\");\n    });\n    }\n};\n}",
+  "custom" : true,
+  "properties" : [ {
+    "label" : "label",
+    "name" : "label",
+    "type" : "text",
+    "defaultValue" : "Generate PDF",
+    "bond" : "expression"
+  }, {
+    "label" : "Button style",
+    "name" : "buttonStyle",
+    "caption" : "Bootstrap button styles",
+    "help" : "Choose a bootstrap style name for your button",
+    "type" : "choice",
+    "defaultValue" : "btn-primary",
+    "choiceValues" : [ "btn", "btn-primary", "btn-default", "btn-succes", "btn-info", "btn-warning", "btn-danger", "btn-link" ],
+    "bond" : "expression"
+  }, {
+    "label" : "Generated file name",
+    "name" : "fileName",
+    "caption" : "You should provide only the name, extension will be added automatically (.pdf)",
+    "help" : "Name of the generated pdf file",
+    "type" : "text",
+    "defaultValue" : "SomeFileName",
+    "bond" : "expression"
+  }, {
+    "label" : "Width",
+    "name" : "width",
+    "help" : "Canvas width",
+    "type" : "text",
+    "defaultValue" : "500",
+    "bond" : "expression"
+  }, {
+    "label" : "Canvas scope",
+    "name" : "canvasScope",
+    "help" : "Choose between the entire body or one specific class name",
+    "type" : "choice",
+    "defaultValue" : "body",
+    "choiceValues" : [ "body", "specific class" ],
+    "bond" : "expression"
+  }, {
+    "label" : "Selected class name",
+    "name" : "selectedClass",
+    "help" : "Choose the name of the class as the start element for the canvas (by default or if no value in this field, the entire is body is taken)",
+    "type" : "text",
+    "bond" : "expression"
+  } ],
+  "assets" : [ {
+    "id" : "efc59b91-f0ad-4774-a146-17d434d242d8",
+    "name" : "vfs_fonts.js",
+    "type" : "js",
+    "order" : 3,
+    "external" : false
+  }, {
+    "id" : "1cb83e0b-12cf-41c2-812d-10672376e22a",
+    "name" : "pdfmake.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "50b0f4e2-8769-446a-b847-59dddde342b2",
+    "name" : "html2canvas.min.js",
+    "type" : "js",
+    "order" : 1,
+    "external" : false
+  } ],
+  "requiredModules" : [ ],
+  "type" : "widget"
+}

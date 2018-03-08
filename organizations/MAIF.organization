@@ -1161,10 +1161,5 @@
       <roleName>Concierge</roleName>
       <groupName>MAIF</groupName>
     </membership>
-    <membership>
-      <userName>mehdi</userName>
-      <roleName>Concierge</roleName>
-      <groupName>MAIF</groupName>
-    </membership>
   </memberships>
 </organization:Organization>
