@@ -673,6 +673,15 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="manuella.morantin">
+      <firstName>Manuella</firstName>
+      <lastName>Morantin</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Utilisateur">
@@ -1159,6 +1168,11 @@
     <membership>
       <userName>gelin.emmanuel</userName>
       <roleName>Concierge</roleName>
+      <groupName>MAIF</groupName>
+    </membership>
+    <membership>
+      <userName>manuella.morantin</userName>
+      <roleName>Utilisateur</roleName>
       <groupName>MAIF</groupName>
     </membership>
   </memberships>
